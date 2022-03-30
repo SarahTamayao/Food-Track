@@ -18,5 +18,5 @@ target 'Food Track' do
 
   # Parse pods
   pod 'Parse'
-
+  pod 'AlamofireImage'
 end

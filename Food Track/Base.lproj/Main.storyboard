@@ -72,8 +72,7 @@
                                     <color key="baseBackgroundColor" red="0.85103571410000001" green="0.39996272329999999" blue="0.4117860794" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="onSignup:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Prz-h6-cxj"/>
-                                    <segue destination="sqC-Ka-8J9" kind="presentation" modalPresentationStyle="fullScreen" id="sqp-20-SGT"/>
+                                    <segue destination="sqC-Ka-8J9" kind="presentation" modalPresentationStyle="fullScreen" id="mWX-r3-IM8"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="Food-Track-logo" translatesAutoresizingMaskIntoConstraints="NO" id="Qe1-9i-Etp">
@@ -109,6 +108,7 @@
                     <connections>
                         <outlet property="passwordField" destination="Fvz-Kc-z24" id="NF1-gY-Zhs"/>
                         <outlet property="usernameField" destination="oam-kU-J4s" id="kQg-tY-y2C"/>
+                        <segue destination="WJo-J9-ZWW" kind="presentation" identifier="loginSegue" id="5Qb-Us-blX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -155,16 +155,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="profile-placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="hWS-bG-K0f">
-                                <rect key="frame" x="147" y="297" width="121" height="101"/>
-                                <gestureRecognizers/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="101" id="sdW-3d-AQi"/>
-                                </constraints>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="h3Z-tO-aqA" appends="YES" id="ji4-Sc-Ewh"/>
-                                </connections>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d53-hg-Gre">
                                 <rect key="frame" x="157" y="549" width="100" height="40"/>
                                 <constraints>
@@ -179,10 +169,20 @@
                                     <color key="baseBackgroundColor" red="0.85103571410000001" green="0.39996272329999999" blue="0.4117860794" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </buttonConfiguration>
                                 <connections>
+                                    <action selector="OnSignUp:" destination="sqC-Ka-8J9" eventType="touchUpInside" id="vu6-NE-Abf"/>
                                     <action selector="onSignup:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ttj-vJ-vh5"/>
-                                    <segue destination="BYZ-38-t0r" kind="presentation" modalPresentationStyle="fullScreen" id="eO9-li-6vE"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="profile-placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="hWS-bG-K0f">
+                                <rect key="frame" x="142" y="284" width="131" height="110"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="101" id="sdW-3d-AQi"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="h3Z-tO-aqA" appends="YES" id="ji4-Sc-Ewh"/>
+                                </connections>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ZKn-MD-4er"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -211,6 +211,7 @@
                         <outlet property="nameSignUpField" destination="VGZ-NC-2eK" id="aNu-sH-unj"/>
                         <outlet property="passwordSignUpField" destination="VJt-T7-RAe" id="j3m-rt-4vn"/>
                         <outlet property="profileImgView" destination="hWS-bG-K0f" id="NCf-A0-hdB"/>
+                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="SignUpSegue" modalPresentationStyle="fullScreen" id="fd3-8w-g5X"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CXy-kj-NdL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -220,7 +221,41 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="750.72463768115949" y="87.723214285714278"/>
+            <point key="canvasLocation" x="858" y="-291"/>
+        </scene>
+        <!--Home View Controller-->
+        <scene sceneID="wWn-s7-6jf">
+            <objects>
+                <viewController id="wZx-tz-oe1" customClass="HomeViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4oP-vY-0HK">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="qXj-z5-cQQ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="qm3-tC-F2o"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="q0t-oA-ULB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1768.1159420289857" y="452.00892857142856"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="zjC-hm-HNa">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="WJo-J9-ZWW" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="4gN-36-Zwe">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="wZx-tz-oe1" kind="relationship" relationship="rootViewController" id="PKw-Fv-SBF"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JEv-rc-Izg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="857.97101449275374" y="451.33928571428567"/>
         </scene>
     </scenes>
     <resources>
