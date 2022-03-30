@@ -13,8 +13,8 @@ share on a post their current location. Customers will be able to see where thei
 followed/favorite food trucks are currently at.
 
 ### App Evaluation
-- **Category:** 
-- **Mobile:** 
+- **Category:** Food, Reviews
+- **Mobile:** Apple Native
 - **Story:** Allows food trucks to post their location and users to view those locations.
 - **Market:** Anyone who owns a food truck and those who really enjoy eating from food trucks but don't always know their location
 - **Habit:** Users will be able to get directions to a certain food truck and explore others around their area
