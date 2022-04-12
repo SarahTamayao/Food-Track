@@ -26,23 +26,23 @@ followed/favorite food trucks are currently at.
 
 **Required Must-have Stories**
 
-[X] User can login to the application
-[X] App has a tab bar
-[] User can logout of the application
-[] Food Trucks/User can create account
-[] Differenciate between food trucks and users
-[] User can view their account
-[] User can view a feed of food truck post
-[] Food trucks can post
+- [X] User can login to the application
+- [X] App has a tab bar
+- [] User can logout of the application
+- [] Food Trucks/User can create account
+- [] Differenciate between food trucks and users
+- [] User can view their account
+- [] User can view a feed of food truck post
+- [] Food trucks can post
 
 **Optional Nice-to-have Stories**
 
-[] Users can open up a bigger view of a post
-[] Users can view a google maps map of all favorited food trucks location
-[] Users can view a google maps map of food trucks location in post
-[] Users can favorite food trucks
-[] Google login authentication
-[] Users can look up food trucks
+- [] Users can open up a bigger view of a post
+- [] Users can view a google maps map of all favorited food trucks location
+- [] Users can view a google maps map of food trucks location in post
+- [] Users can favorite food trucks
+- [] Google login authentication
+- [] Users can look up food trucks
 
 ### 2. Screen Archetypes
 
