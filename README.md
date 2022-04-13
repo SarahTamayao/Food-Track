@@ -20,6 +20,12 @@ followed/favorite food trucks are currently at.
 - **Habit:** Users will be able to get directions to a certain food truck and explore others around their area
 - **Scope:** Food Track will begin with only being able to post and view feeds.
 
+## Video Update
+
+Here's a walkthrough of implemented user stories:
+
+<img src='unit10.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
 ## Product Spec
 
 ### 1. User Stories (Required and Optional)
