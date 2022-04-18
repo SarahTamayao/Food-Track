@@ -31,6 +31,19 @@ class SignUpViewController: UIViewController, UIImagePickerControllerDelegate, U
 
         // other fields can be set just like with PFObject
         // user["profileImg"] = profileImgView
+        let imageData = profileImgView.image!.pngData()
+        let file = PFFileObject(name: "image.png", data: imageData!)
+        
+        user["image"] = file
+        
+        user.saveInBackground { (success, error) in
+            if success {
+                self.dismiss(animated: true, completion: nil)
+                print("saved!")
+            } else {
+                print("error!")
+            }
+        }
         
         user.signUpInBackground { (success, error) in
             if success {

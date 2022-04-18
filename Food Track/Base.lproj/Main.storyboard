@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xNs-6t-55e">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FOODTRACK" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HLE-Rx-B1F">
-                                <rect key="frame" x="106" y="214" width="208" height="75"/>
+                                <rect key="frame" x="106" y="214" width="185.5" height="75"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="75" id="rcd-et-RHN"/>
                                 </constraints>
@@ -26,17 +26,16 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oam-kU-J4s">
-                                <rect key="frame" x="60" y="310" width="300" height="34"/>
+                                <rect key="frame" x="60" y="310" width="277.5" height="34"/>
                                 <color key="backgroundColor" systemColor="systemGrayColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="300" id="JsX-aZ-WyS"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="28" id="TVC-n6-T93"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Fvz-Kc-z24">
-                                <rect key="frame" x="60" y="374" width="300" height="35"/>
+                                <rect key="frame" x="60" y="374" width="277.5" height="35"/>
                                 <color key="backgroundColor" systemColor="systemGrayColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="nIN-6A-gBW"/>
@@ -61,7 +60,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zvs-sk-QM2">
-                                <rect key="frame" x="250" y="439" width="100" height="40"/>
+                                <rect key="frame" x="227.5" y="439" width="100" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="I0o-h2-hka"/>
                                     <constraint firstAttribute="height" constant="40" id="g5B-hE-ADY"/>
@@ -325,6 +324,76 @@
             </objects>
             <point key="canvasLocation" x="-632" y="2427"/>
         </scene>
+        <!--Add Truck View Controller-->
+        <scene sceneID="sCq-PT-6dI">
+            <objects>
+                <viewController id="5sT-Y0-g3x" customClass="AddTruckViewController" customModule="Food_Track" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="m10-6a-Zik">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="foodtruck-placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="fqF-mP-tAc">
+                                <rect key="frame" x="118" y="103" width="180" height="160"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="25a-hY-efn" appends="YES" id="iRP-Op-VJo"/>
+                                </connections>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Food Truck Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kc9-Hh-Ldw">
+                                <rect key="frame" x="70" y="331" width="277.5" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemGrayColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type of Food" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WAc-g4-Aqv">
+                                <rect key="frame" x="70" y="396" width="277.5" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemGrayColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KUb-ga-6R8">
+                                <rect key="frame" x="157" y="530" width="100" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.85103571410000001" green="0.39996272329999999" blue="0.4117860794" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Submit">
+                                    <color key="baseBackgroundColor" red="0.85103571410000001" green="0.39996272329999999" blue="0.4117860794" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="onLogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="f92-Si-McM"/>
+                                    <action selector="truckSubmitButton:" destination="5sT-Y0-g3x" eventType="touchUpInside" id="pl8-Ey-9bP"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Description" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wbd-T6-3Jl">
+                                <rect key="frame" x="70" y="461" width="277.5" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemGrayColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="swB-QF-Mve"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <connections>
+                        <outlet property="descriptionField" destination="wbd-T6-3Jl" id="yOd-6P-uBd"/>
+                        <outlet property="foodTypeField" destination="WAc-g4-Aqv" id="y1A-e3-kFh"/>
+                        <outlet property="truckImgView" destination="fqF-mP-tAc" id="sRQ-4J-eC4"/>
+                        <outlet property="truckNameField" destination="kc9-Hh-Ldw" id="45f-De-azd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kgo-wj-2gQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="25a-hY-efn">
+                    <connections>
+                        <action selector="onTruckImgButton:" destination="5sT-Y0-g3x" id="aFT-lS-3bX"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="-2300" y="2426.7857142857142"/>
+        </scene>
         <!--Food Track-->
         <scene sceneID="oSF-IZ-dd1">
             <objects>
@@ -348,7 +417,14 @@
                             <outlet property="delegate" destination="B1J-1W-aeA" id="k4L-Mp-kOO"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Food Track" id="ZWJ-e2-p4m"/>
+                    <navigationItem key="navigationItem" title="Food Track" id="ZWJ-e2-p4m">
+                        <barButtonItem key="leftBarButtonItem" image="plus" catalog="system" id="Xxw-VF-W0N">
+                            <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <segue destination="5sT-Y0-g3x" kind="presentation" modalPresentationStyle="fullScreen" id="VyG-d0-LDS"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a8d-hY-pMn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -381,9 +457,11 @@
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Food-Track-logo" width="523" height="282"/>
+        <image name="foodtruck-placeholder" width="1045" height="1045"/>
         <image name="heart.fill" catalog="system" width="128" height="109"/>
         <image name="house.fill" catalog="system" width="128" height="106"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
+        <image name="plus" catalog="system" width="128" height="113"/>
         <image name="profile-placeholder" width="1192" height="1194"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
