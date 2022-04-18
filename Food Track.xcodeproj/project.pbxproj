@@ -16,6 +16,7 @@
 		4A747E2F27F258EF00AA0495 /* Food_TrackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A747E2E27F258EF00AA0495 /* Food_TrackTests.swift */; };
 		4A747E3927F258EF00AA0495 /* Food_TrackUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A747E3827F258EF00AA0495 /* Food_TrackUITests.swift */; };
 		4A747E3B27F258EF00AA0495 /* Food_TrackUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A747E3A27F258EF00AA0495 /* Food_TrackUITestsLaunchTests.swift */; };
+		5F15925F280D066E00AA0040 /* AddTruckViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F15925E280D066E00AA0040 /* AddTruckViewController.swift */; };
 		5F843B5327F3BA9F0002EA2B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F843B5227F3BA9F0002EA2B /* LoginViewController.swift */; };
 		5F843B5527F3BD0A0002EA2B /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F843B5427F3BD0A0002EA2B /* SignUpViewController.swift */; };
 		AF0F4C95FE5C8AF4A3CBEC20 /* Pods_Food_Track.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7139354DEC85EEB4EFF61C4F /* Pods_Food_Track.framework */; };
@@ -55,6 +56,7 @@
 		4A747E3827F258EF00AA0495 /* Food_TrackUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food_TrackUITests.swift; sourceTree = "<group>"; };
 		4A747E3A27F258EF00AA0495 /* Food_TrackUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food_TrackUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		5A90512F3FA48BEA4B5416A3 /* Pods-Food TrackTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Food TrackTests.release.xcconfig"; path = "Target Support Files/Pods-Food TrackTests/Pods-Food TrackTests.release.xcconfig"; sourceTree = "<group>"; };
+		5F15925E280D066E00AA0040 /* AddTruckViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTruckViewController.swift; sourceTree = "<group>"; };
 		5F843B5227F3BA9F0002EA2B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		5F843B5427F3BD0A0002EA2B /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		6D82C7D332C52D6E56AEC01D /* Pods-Food Track.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Food Track.release.xcconfig"; path = "Target Support Files/Pods-Food Track/Pods-Food Track.release.xcconfig"; sourceTree = "<group>"; };
@@ -121,6 +123,7 @@
 				4A747E1727F258EC00AA0495 /* AppDelegate.swift */,
 				4A747E1927F258EC00AA0495 /* SceneDelegate.swift */,
 				4A747E1D27F258EC00AA0495 /* Main.storyboard */,
+				5F15925E280D066E00AA0040 /* AddTruckViewController.swift */,
 				5F843B5427F3BD0A0002EA2B /* SignUpViewController.swift */,
 				5F843B5227F3BA9F0002EA2B /* LoginViewController.swift */,
 				4A747E2027F258EE00AA0495 /* Assets.xcassets */,
@@ -412,6 +415,7 @@
 				5F843B5327F3BA9F0002EA2B /* LoginViewController.swift in Sources */,
 				4A747E1827F258EC00AA0495 /* AppDelegate.swift in Sources */,
 				5F843B5527F3BD0A0002EA2B /* SignUpViewController.swift in Sources */,
+				5F15925F280D066E00AA0040 /* AddTruckViewController.swift in Sources */,
 				4A747E1A27F258EC00AA0495 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
