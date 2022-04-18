@@ -16,6 +16,7 @@
 		4A747E2F27F258EF00AA0495 /* Food_TrackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A747E2E27F258EF00AA0495 /* Food_TrackTests.swift */; };
 		4A747E3927F258EF00AA0495 /* Food_TrackUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A747E3827F258EF00AA0495 /* Food_TrackUITests.swift */; };
 		4A747E3B27F258EF00AA0495 /* Food_TrackUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A747E3A27F258EF00AA0495 /* Food_TrackUITestsLaunchTests.swift */; };
+		4AE65AEC280D497100709D7F /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE65AEB280D497100709D7F /* ProfileViewController.swift */; };
 		5F15925F280D066E00AA0040 /* AddTruckViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F15925E280D066E00AA0040 /* AddTruckViewController.swift */; };
 		5F843B5327F3BA9F0002EA2B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F843B5227F3BA9F0002EA2B /* LoginViewController.swift */; };
 		5F843B5527F3BD0A0002EA2B /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F843B5427F3BD0A0002EA2B /* SignUpViewController.swift */; };
@@ -55,6 +56,7 @@
 		4A747E3427F258EF00AA0495 /* Food TrackUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Food TrackUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A747E3827F258EF00AA0495 /* Food_TrackUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food_TrackUITests.swift; sourceTree = "<group>"; };
 		4A747E3A27F258EF00AA0495 /* Food_TrackUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food_TrackUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4AE65AEB280D497100709D7F /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		5A90512F3FA48BEA4B5416A3 /* Pods-Food TrackTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Food TrackTests.release.xcconfig"; path = "Target Support Files/Pods-Food TrackTests/Pods-Food TrackTests.release.xcconfig"; sourceTree = "<group>"; };
 		5F15925E280D066E00AA0040 /* AddTruckViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTruckViewController.swift; sourceTree = "<group>"; };
 		5F843B5227F3BA9F0002EA2B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -129,6 +131,7 @@
 				4A747E2027F258EE00AA0495 /* Assets.xcassets */,
 				4A747E2227F258EE00AA0495 /* LaunchScreen.storyboard */,
 				4A747E2527F258EE00AA0495 /* Info.plist */,
+				4AE65AEB280D497100709D7F /* ProfileViewController.swift */,
 			);
 			path = "Food Track";
 			sourceTree = "<group>";
@@ -412,6 +415,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4AE65AEC280D497100709D7F /* ProfileViewController.swift in Sources */,
 				5F843B5327F3BA9F0002EA2B /* LoginViewController.swift in Sources */,
 				4A747E1827F258EC00AA0495 /* AppDelegate.swift in Sources */,
 				5F843B5527F3BD0A0002EA2B /* SignUpViewController.swift in Sources */,

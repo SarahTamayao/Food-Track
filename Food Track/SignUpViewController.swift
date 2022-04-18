@@ -75,7 +75,7 @@ class SignUpViewController: UIViewController, UIImagePickerControllerDelegate, U
         let image = info[.editedImage] as! UIImage
         
         let size = CGSize(width: 500, height: 500)
-        let scaledImage = image.af_imageAspectScaled(toFit: size)
+        let scaledImage = image.af.imageAspectScaled(toFit: size)
         
         //profileImgView.image = scaledImage
         profileImgView.image = scaledImage.circleMask
