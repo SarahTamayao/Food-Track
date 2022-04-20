@@ -34,12 +34,12 @@ Here's a walkthrough of implemented user stories:
 
 - [X] User can login to the application
 - [X] App has a tab bar
-- [ ] User can logout of the application
-- [ ] Food Trucks/User can create account
+- [X] User can logout of the application
+- [X] Food Trucks/User can create account
 - [ ] Differenciate between food trucks and users
 - [ ] User can view their account
 - [ ] User can view a feed of food truck post
-- [ ] Food trucks can post
+- [X] Food trucks can post
 
 **Optional Nice-to-have Stories**
 
