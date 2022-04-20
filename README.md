@@ -24,7 +24,7 @@ followed/favorite food trucks are currently at.
 
 Here's a walkthrough of implemented user stories:
 
-<img src='unit10.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='foodtrack_demo1.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 ## Product Spec
 
