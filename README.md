@@ -24,7 +24,7 @@ followed/favorite food trucks are currently at.
 
 Here's a walkthrough of implemented user stories:
 
-<img src='foodtrack_demo1.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='foodtrack_demo1.gif' title='Video Walkthrough' width='300' alt='Video Walkthrough' />
 
 ## Product Spec
 
@@ -94,7 +94,7 @@ Here's a walkthrough of implemented user stories:
     * Feed
 
 ## Wireframes
-<img src="wireframe.png" width=600>
+<img src="wireframe.png" width=10>
 
 ## Schema 
 <img src= "https://user-images.githubusercontent.com/67992122/160756892-7f54d414-748c-4052-b723-1831bf0653db.png" width=600>
