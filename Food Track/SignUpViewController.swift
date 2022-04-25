@@ -90,8 +90,9 @@ extension UIImage {
         imageView.contentMode = .scaleAspectFill
         imageView.image = self
         imageView.layer.cornerRadius = square.width/2
-        imageView.layer.borderColor = UIColor.white.cgColor
-        imageView.layer.borderWidth = 5
+        imageView.layer.backgroundColor = UIColor.black.cgColor
+//        imageView.layer.borderColor = UIColor.white.cgColor
+//        imageView.layer.borderWidth = 5
         imageView.layer.masksToBounds = true
         UIGraphicsBeginImageContextWithOptions(imageView.bounds.size, false, scale)
         defer { UIGraphicsEndImageContext() }

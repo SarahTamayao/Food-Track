@@ -229,8 +229,49 @@
                     <view key="view" contentMode="scaleToFill" id="4oP-vY-0HK">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="profile-placeholder" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QJ9-We-sYh">
+                                <rect key="frame" x="132" y="202" width="150" height="175.5"/>
+                                <color key="backgroundColor" red="0.79450601340000004" green="0.42383348939999999" blue="0.42352002859999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="hvR-MY-EzM" appends="YES" id="iqK-gR-PWB"/>
+                                </connections>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CHf-O1-xgJ">
+                                <rect key="frame" x="82" y="435" width="250" height="34"/>
+                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pkb-Vx-DII">
+                                <rect key="frame" x="127" y="702" width="160" height="31"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Update">
+                                    <color key="baseBackgroundColor" red="0.79450601340000004" green="0.42383348939999999" blue="0.42352002859999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="updateData:" destination="wZx-tz-oe1" eventType="touchUpInside" id="xQy-OU-F9e"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="qXj-z5-cQQ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="CHf-O1-xgJ" firstAttribute="top" secondItem="QJ9-We-sYh" secondAttribute="bottom" constant="57.5" id="3bx-Ui-ycK"/>
+                            <constraint firstItem="qXj-z5-cQQ" firstAttribute="trailing" secondItem="Pkb-Vx-DII" secondAttribute="trailing" constant="127" id="4Tf-vL-Y5z"/>
+                            <constraint firstItem="qXj-z5-cQQ" firstAttribute="trailing" secondItem="CHf-O1-xgJ" secondAttribute="trailing" constant="82" id="5fK-I8-G9A"/>
+                            <constraint firstItem="Pkb-Vx-DII" firstAttribute="top" secondItem="CHf-O1-xgJ" secondAttribute="bottom" constant="233" id="DJd-2V-hhn"/>
+                            <constraint firstItem="qXj-z5-cQQ" firstAttribute="trailing" secondItem="QJ9-We-sYh" secondAttribute="trailing" constant="132" id="Oon-wv-DTH"/>
+                            <constraint firstItem="QJ9-We-sYh" firstAttribute="top" secondItem="qXj-z5-cQQ" secondAttribute="top" constant="114" id="QdV-Cb-Tdg"/>
+                            <constraint firstItem="qXj-z5-cQQ" firstAttribute="bottom" secondItem="Pkb-Vx-DII" secondAttribute="bottom" constant="80" id="VQZ-6y-SqJ"/>
+                            <constraint firstItem="QJ9-We-sYh" firstAttribute="leading" secondItem="qXj-z5-cQQ" secondAttribute="leading" constant="132" id="bdk-Mi-B6N"/>
+                            <constraint firstItem="Pkb-Vx-DII" firstAttribute="top" secondItem="CHf-O1-xgJ" secondAttribute="bottom" constant="233" id="caA-MU-wWa"/>
+                            <constraint firstItem="CHf-O1-xgJ" firstAttribute="leading" secondItem="qXj-z5-cQQ" secondAttribute="leading" constant="82" id="jUO-Nq-Rgl"/>
+                            <constraint firstItem="Pkb-Vx-DII" firstAttribute="leading" secondItem="qXj-z5-cQQ" secondAttribute="leading" constant="127" id="tr8-yw-YER"/>
+                            <constraint firstItem="CHf-O1-xgJ" firstAttribute="top" secondItem="QJ9-We-sYh" secondAttribute="bottom" constant="57.5" id="vDB-vm-BOM"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Profile" id="qm3-tC-F2o">
                         <barButtonItem key="rightBarButtonItem" title="Logout" id="FgR-3v-aK0">
@@ -240,10 +281,19 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="nameField" destination="CHf-O1-xgJ" id="1uQ-7e-BDF"/>
+                        <outlet property="profileImg" destination="QJ9-We-sYh" id="dQX-9Y-IBM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="q0t-oA-ULB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="hvR-MY-EzM">
+                    <connections>
+                        <action selector="onCameraButton:" destination="wZx-tz-oe1" id="ssc-4m-jwl"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="299" y="2427"/>
+            <point key="canvasLocation" x="1208.6956521739132" y="2426.7857142857142"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="wr8-vP-n25">
@@ -325,9 +375,9 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tgw-iG-8Uw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-632" y="2427"/>
+            <point key="canvasLocation" x="276.81159420289856" y="2426.7857142857142"/>
         </scene>
-        <!--Add Truck View Controller-->
+        <!--Add A Food Truck-->
         <scene sceneID="sCq-PT-6dI">
             <objects>
                 <viewController id="5sT-Y0-g3x" customClass="AddTruckViewController" customModule="Food_Track" customModuleProvider="target" sceneMemberID="viewController">
@@ -381,6 +431,7 @@
                         <viewLayoutGuide key="safeArea" id="swB-QF-Mve"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Add A Food Truck" id="vHX-AQ-Uho"/>
                     <connections>
                         <outlet property="descriptionField" destination="wbd-T6-3Jl" id="yOd-6P-uBd"/>
                         <outlet property="foodTypeField" destination="WAc-g4-Aqv" id="y1A-e3-kFh"/>
@@ -395,7 +446,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="-2300" y="2426.7857142857142"/>
+            <point key="canvasLocation" x="-1526" y="3177"/>
         </scene>
         <!--Food Track-->
         <scene sceneID="oSF-IZ-dd1">
@@ -424,14 +475,14 @@
                         <barButtonItem key="leftBarButtonItem" image="plus" catalog="system" id="Xxw-VF-W0N">
                             <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
-                                <segue destination="5sT-Y0-g3x" kind="presentation" modalPresentationStyle="fullScreen" id="VyG-d0-LDS"/>
+                                <segue destination="BaW-ef-Zmx" kind="presentation" modalPresentationStyle="fullScreen" id="VyG-d0-LDS"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a8d-hY-pMn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1526" y="2427"/>
+            <point key="canvasLocation" x="-615.94202898550725" y="2426.7857142857142"/>
         </scene>
         <!--Home-->
         <scene sceneID="45g-SE-tn9">
@@ -454,6 +505,28 @@
             </objects>
             <point key="canvasLocation" x="-1526" y="1681"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ND5-st-yym">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="BaW-ef-Zmx" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="vzl-6X-XwL">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.79450601340000004" green="0.42383348939999999" blue="0.42352002859999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="5sT-Y0-g3x" kind="relationship" relationship="rootViewController" id="64d-By-iTA"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PuC-3h-K5f" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1526" y="2427"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Food-Track-logo" width="523" height="282"/>
@@ -465,6 +538,9 @@
         <image name="profile-placeholder" width="1192" height="1194"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGrayColor">
             <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
