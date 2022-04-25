@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -220,7 +220,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="300" y="122"/>
+            <point key="canvasLocation" x="372" y="122"/>
         </scene>
         <!--Profile-->
         <scene sceneID="wWn-s7-6jf">
@@ -325,7 +325,90 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tgw-iG-8Uw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-632" y="2427"/>
+            <point key="canvasLocation" x="-623" y="2427"/>
+        </scene>
+        <!--Truck Feed View Controller-->
+        <scene sceneID="vYu-1k-Clq">
+            <objects>
+                <viewController id="5Kz-xb-IKg" customClass="TruckFeedViewController" customModule="Food_Track" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="f2B-St-NIx">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="449-ZT-Mi7">
+                                <rect key="frame" x="0.0" y="-34" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="truckPostCell" rowHeight="265" id="RBZ-3c-CHv" customClass="truckPostCell" customModule="Food_Track" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="265"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="RBZ-3c-CHv" id="BCa-4A-ZMr">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="265"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="XUT-xh-Url">
+                                                    <rect key="frame" x="28" y="19" width="180" height="188"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="180" id="8Qa-Z7-1eb"/>
+                                                        <constraint firstAttribute="height" constant="188" id="WS3-V7-W3l"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Truck name" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8tu-QH-Ren">
+                                                    <rect key="frame" x="28" y="215" width="180" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Truck description" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VTn-cu-Sy4">
+                                                    <rect key="frame" x="216" y="19" width="170" height="188"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="XUT-xh-Url" firstAttribute="leading" secondItem="8tu-QH-Ren" secondAttribute="leading" id="27M-yV-eoO"/>
+                                                <constraint firstItem="8tu-QH-Ren" firstAttribute="top" secondItem="XUT-xh-Url" secondAttribute="bottom" constant="8" id="42R-yu-Vzb"/>
+                                                <constraint firstItem="XUT-xh-Url" firstAttribute="top" secondItem="VTn-cu-Sy4" secondAttribute="top" id="8hQ-U3-g2U"/>
+                                                <constraint firstItem="VTn-cu-Sy4" firstAttribute="top" secondItem="BCa-4A-ZMr" secondAttribute="topMargin" constant="8" id="I16-pk-47B"/>
+                                                <constraint firstItem="XUT-xh-Url" firstAttribute="trailing" secondItem="8tu-QH-Ren" secondAttribute="trailing" id="Zl5-dK-mlo"/>
+                                                <constraint firstItem="XUT-xh-Url" firstAttribute="leading" secondItem="BCa-4A-ZMr" secondAttribute="leadingMargin" constant="8" id="eEb-vl-W3d"/>
+                                                <constraint firstItem="8tu-QH-Ren" firstAttribute="top" secondItem="XUT-xh-Url" secondAttribute="bottom" constant="8" id="eb2-5p-XQO"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="VTn-cu-Sy4" secondAttribute="trailing" constant="8" id="fgM-s9-4HH"/>
+                                                <constraint firstItem="VTn-cu-Sy4" firstAttribute="leading" secondItem="XUT-xh-Url" secondAttribute="trailing" constant="8" id="onO-Sz-1HP"/>
+                                                <constraint firstItem="XUT-xh-Url" firstAttribute="bottom" secondItem="VTn-cu-Sy4" secondAttribute="bottom" id="pYG-DT-iYU"/>
+                                                <constraint firstItem="XUT-xh-Url" firstAttribute="top" secondItem="BCa-4A-ZMr" secondAttribute="topMargin" constant="8" id="rC9-Vc-eBv"/>
+                                                <constraint firstItem="VTn-cu-Sy4" firstAttribute="leading" secondItem="XUT-xh-Url" secondAttribute="trailing" constant="8" symbolic="YES" id="tGp-yf-kb3"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="descriptionLabel" destination="VTn-cu-Sy4" id="0Nk-E9-9vq"/>
+                                            <outlet property="photoView" destination="XUT-xh-Url" id="dJS-Ei-97B"/>
+                                            <outlet property="truckNameLabel" destination="8tu-QH-Ren" id="jMV-oH-Skb"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="gEE-f8-WSp"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="uM9-s1-3Pg">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="arrow.left" catalog="system" id="nIU-0Q-pic">
+                            <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <segue destination="bM0-aS-gqP" kind="presentation" modalPresentationStyle="fullScreen" id="Y8Z-uR-02e"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="truckTableView" destination="449-ZT-Mi7" id="38b-gM-UBn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X49-Ab-2Ux" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3139.130434782609" y="2426.7857142857142"/>
         </scene>
         <!--Add Truck View Controller-->
         <scene sceneID="sCq-PT-6dI">
@@ -395,7 +478,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="-2300" y="2426.7857142857142"/>
+            <point key="canvasLocation" x="-2249" y="2427"/>
         </scene>
         <!--Food Track-->
         <scene sceneID="oSF-IZ-dd1">
@@ -427,6 +510,12 @@
                                 <segue destination="5sT-Y0-g3x" kind="presentation" modalPresentationStyle="fullScreen" id="VyG-d0-LDS"/>
                             </connections>
                         </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="text.justify" catalog="system" id="8eh-oh-thZ">
+                            <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <segue destination="bkG-5m-VO3" kind="presentation" modalPresentationStyle="fullScreen" id="QKm-8R-Oem"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a8d-hY-pMn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -454,15 +543,43 @@
             </objects>
             <point key="canvasLocation" x="-1526" y="1681"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="8SO-QO-Rjk">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="bkG-5m-VO3" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="1ee-gh-PuH">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.85103571410000001" green="0.39996272329999999" blue="0.4117860794" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="5Kz-xb-IKg" kind="relationship" relationship="rootViewController" id="dB6-SK-hEM"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fhs-1i-zzy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3138" y="1681"/>
+        </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="QKm-8R-Oem"/>
+        <segue reference="Y8Z-uR-02e"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="Food-Track-logo" width="523" height="282"/>
+        <image name="arrow.left" catalog="system" width="128" height="98"/>
         <image name="foodtruck-placeholder" width="1045" height="1045"/>
         <image name="heart.fill" catalog="system" width="128" height="109"/>
         <image name="house.fill" catalog="system" width="128" height="106"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
         <image name="plus" catalog="system" width="128" height="113"/>
         <image name="profile-placeholder" width="1192" height="1194"/>
+        <image name="text.justify" catalog="system" width="128" height="100"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
