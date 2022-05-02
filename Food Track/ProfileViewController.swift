@@ -13,6 +13,7 @@ class ProfileViewController: UIViewController, UIImagePickerControllerDelegate, 
 
     @IBOutlet weak var profileImg: UIImageView!
     @IBOutlet weak var nameField: UITextField!
+    @IBOutlet weak var bioField: UITextView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -68,11 +69,11 @@ class ProfileViewController: UIViewController, UIImagePickerControllerDelegate, 
         let file = PFFileObject(name: "image.png", data: imageData!)
         
         user?.setValue(nameField.text!, forKey: "username")
+        user?.setValue(bioField.text!, forKey: "bio")
         user?.setObject(file!, forKey: "image")
         
         user?.saveInBackground{ (success, error) in
            if success {
-               self.dismiss(animated: true, completion: nil)
                print("saved!")
            } else {
                print("error!")

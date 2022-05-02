@@ -31,7 +31,7 @@ class TruckFeedViewController: UIViewController, UITableViewDelegate, UITableVie
         let query = PFQuery(className:"Trucks")
         query.includeKeys(["Name", "Description.owner"])
         query.limit = 20
-        
+        query.addDescendingOrder("createdAt")
         query.findObjectsInBackground { (posts, error) in
             if posts != nil {
                 self.posts = posts!
