@@ -37,8 +37,8 @@ Here's a walkthrough of implemented user stories:
 - [X] User can logout of the application
 - [X] Food Trucks/User can create account
 - [ ] Differenciate between food trucks and users
-- [ ] User can view their account
-- [ ] User can view a feed of food truck post
+- [X] User can view their account
+- [X] User can view a feed of food truck post
 - [X] Food trucks can post
 
 **Optional Nice-to-have Stories**
