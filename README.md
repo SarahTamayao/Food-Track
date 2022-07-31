@@ -103,20 +103,6 @@ Here's a walkthrough of implemented user stories:
 <img width="600" src="https://user-images.githubusercontent.com/67992122/160757011-36433326-f4da-4644-929b-521252765052.png">
 
 ### Networking
-#### Users
-* GET &ensp;&ensp;&ensp;&ensp;&ensp;&ensp; /user
-* POST  &ensp;&ensp;&ensp;&ensp;&nbsp; /user
-* GET   &ensp;&ensp;&ensp;&ensp;&ensp;&nbsp; /user/{UserId}
-* PUT   &ensp;&ensp;&ensp;&ensp;&ensp;&nbsp; /user/{UserId}
-* GET   &nbsp;&ensp;&ensp;&ensp;&ensp;&nbsp;&nbsp; /user/{UserId}/Likes
-* DELETE &nbsp;&nbsp;&nbsp;&nbsp; /user/{userId}/Likes
-
-
-#### FoodTruck
-* POST  &ensp;&ensp;&ensp;&nbsp;  /foodtruck
-* GET   &ensp;&ensp;&ensp;&nbsp;&nbsp;&nbsp;    /foodtruck/{FoodTruckID}
-* POST  &ensp;&ensp;&nbsp;&nbsp;   /foodtruck/{FoodTruckID}/MapLocation
-* GET   &ensp;&ensp;&ensp;&nbsp;&nbsp;&nbsp;    /foodtruck/{FoodTruckID}/MapLocation
 
 - [Add list of network requests by screen ]
 - [Create basic snippets for each Parse network request]
